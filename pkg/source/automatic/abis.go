@@ -16,7 +16,7 @@ func init() {
 		ABI  *abi.ABI
 		data []byte
 	}{
-		{&elasticPoolABI, elasticPoolJson},
+		{&elasticPoolABI, automaticPoolJson},
 		{&erc20ABI, erc20Json},
 	}
 
