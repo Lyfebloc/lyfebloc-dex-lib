@@ -43,7 +43,7 @@ func TestGetPreferredPrice(t *testing.T) {
 			expectedIsMarketPrice: true,
 		},
 		{
-			name: "it should return price when the prefer price source is Kyberswap",
+			name: "it should return price when the prefer price source is lyfebloc",
 			key:  "address",
 			price: Price{
 				Address:           "address",
@@ -51,7 +51,7 @@ func TestGetPreferredPrice(t *testing.T) {
 				Liquidity:         100000,
 				LpAddress:         "lpAddress",
 				MarketPrice:       2,
-				PreferPriceSource: PriceSourceKyberswap,
+				PreferPriceSource: PriceSourcelyfebloc,
 			},
 			expectedPriceValue:    1,
 			expectedIsMarketPrice: false,

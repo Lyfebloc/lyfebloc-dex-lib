@@ -3,7 +3,7 @@ package entity
 type PriceSource string
 
 const (
-	PriceSourceKyberswap PriceSource = "kyberswap"
+	PriceSourcelyfebloc  PriceSource = "lyfebloc"
 	PriceSourceCoingecko PriceSource = "coingecko"
 )
 
@@ -25,7 +25,7 @@ func (p Price) GetPreferredPrice() (float64, bool) {
 	}
 
 	switch p.PreferPriceSource {
-	case PriceSourceKyberswap:
+	case PriceSourcelyfebloc:
 		return p.Price, false
 	case PriceSourceCoingecko:
 		return p.MarketPrice, true

@@ -3,8 +3,8 @@ module github.com/Lyfebloc/lyfebloc-dex-lib
 go 1.20
 
 require (
-	github.com/Lyfebloc/ethrpc v0.0.1
-	github.com/Lyfebloc/logger v0.0.1
+	github.com/Lyfebloc/ethrpc v0.2.0
+	github.com/Lyfebloc/logger v0.1.0
 	github.com/daoleno/uniswapv3-sdk v0.4.0
 	github.com/ethereum/go-ethereum v1.11.6
 	github.com/go-resty/resty/v2 v2.7.0

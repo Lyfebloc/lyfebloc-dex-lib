@@ -3,7 +3,7 @@ package automatic
 import _ "embed"
 
 //go:embed abis/AutomaticPool.json
-var automaticPool.Json []byte
+var AutomaticPoolJson []byte
 
 //go:embed abis/ERC20.json
 var erc20Json []byte

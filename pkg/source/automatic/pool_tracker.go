@@ -116,14 +116,14 @@ func (d *PoolTracker) fetchRPCData(ctx context.Context, p entity.Pool) (FetchRPC
 	rpcRequest.SetContext(ctx)
 
 	rpcRequest.AddCall(&ethrpc.Call{
-		ABI:    elasticPoolABI,
+		ABI:    AutomaticPoolABI,
 		Target: p.Address,
 		Method: methodGetLiquidityState,
 		Params: nil,
 	}, []interface{}{&liquidityState})
 
 	rpcRequest.AddCall(&ethrpc.Call{
-		ABI:    elasticPoolABI,
+		ABI:    AutomaticPoolABI,
 		Target: p.Address,
 		Method: methodGetPoolState,
 		Params: nil,

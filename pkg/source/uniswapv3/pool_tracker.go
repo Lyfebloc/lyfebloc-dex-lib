@@ -95,7 +95,7 @@ func (d *PoolTracker) GetNewPoolState(ctx context.Context, p entity.Pool) (entit
 	g.Go(func(context.Context) error {
 		var err error
 		// Ad-hoc logic to handle edge case on Optimism
-		// Link to issue: https://www.notion.so/kybernetwork/Aggregator-1-20-defect-1caec6062f9d4da0918fc3443e6e1963#0810d1462cc14f0a9465f935c9e641fe
+		// Link to issue: https://www.notion.so/Lyfebloc/Aggregator-1-20-defect-1caec6062f9d4da0918fc3443e6e1963#0810d1462cc14f0a9465f935c9e641fe
 		// TLDR: Optimism has some pre-genesis Uniswap V3 pool. Subgraph does not have data for these pools
 		// So we have to fetch ticks data from the TickLens smart contract (which is slower).
 		if lo.Contains[string](d.config.preGenesisPoolIDs, p.Address) {

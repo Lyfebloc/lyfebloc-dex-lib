@@ -7,8 +7,8 @@ import (
 )
 
 var (
-	elasticPoolABI abi.ABI
-	erc20ABI       abi.ABI
+	AutomaticPoolABI abi.ABI
+	erc20ABI         abi.ABI
 )
 
 func init() {
@@ -16,7 +16,7 @@ func init() {
 		ABI  *abi.ABI
 		data []byte
 	}{
-		{&elasticPoolABI, automaticPoolJson},
+		{&AutomaticPoolABI, AutomaticPoolJson},
 		{&erc20ABI, erc20Json},
 	}
 
