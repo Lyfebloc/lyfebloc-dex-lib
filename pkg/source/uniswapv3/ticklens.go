@@ -41,7 +41,7 @@ func (d *PoolTracker) getPoolTicksFromSC(ctx context.Context, pool entity.Pool) 
 	}
 
 	// We will process 500 word indexes at a time
-	chunkedWordIndexes := lo.Chunk[int16](wordIndexes, multicallBatchSize)
+	chunkedWordIndexes := lo.Chunk(wordIndexes, multicallBatchSize)
 
 	var ticks []TickResp
 
